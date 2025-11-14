@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfume Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body>
+
+  <!-- Background Video -->
+  <video class="background-video" autoplay loop muted>
+    <source src="background-video/Ombre Nomade Fragrance_ An Ode to Oud _ LOUIS VUITTON.mp4" type="video/mp4" />
+  </video>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img id="logo" src="Gemini_Generated_Image_ki7ha3ki7ha3ki7h.png" alt="Logo" width="60" height="60">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="https://drive.google.com/file/d/1_iIR3CtnByKR77Zn2yqEJ4rsOvaXw37Y/view?usp=sharing">Price List</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Shop Perfumes</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="gents-section/Gents-section.html">Gents</a></li>
+              <li><a class="dropdown-item" href="ladies-section/Ladies.html">Ladies</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="common-section/common.html">Common Perfumes</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="About-us/About-page.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="Contact-page/Contact.html">Contact</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search">
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div class="luxury-carousel">
+    <div class="lux-card active"><img src="coursel/9.avif" alt=""></div>
+    <div class="lux-card"><img src="coursel/0.10.webp" alt=""></div>
+    <div class="lux-card"><img src="coursel/0.2.webp" alt=""></div>
+    <div class="lux-card"><img src="coursel/0.3.jpeg" alt=""></div>
+    <div class="lux-card"><img src="coursel/0.4.jpeg" alt=""></div>
+    <div class="lux-card"><img src="coursel/3.jpeg" alt=""></div>
+    <div class="lux-card"><img src="coursel/7.jpeg" alt=""></div>
+    <div class="lux-card"><img src="coursel/0.9.webp" alt=""></div>
+  </div>
+
+  <!-- Category Section -->
+  <section class="container text-center my-5">
+    <h2 class="mb-4">Category Section</h2>
+    <div class="row g-4">
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="gents-section/Gents-section.html" class="text-decoration-none text-white">
+          <div class="category-card shadow">
+            <img src="card-back-img/Man.jpg" alt="Men" class="category-img">
+            <div class="category-title">Men</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="ladies-section/Ladies.html" class="text-decoration-none text-white">
+          <div class="category-card shadow">
+            <img src="card-back-img/5573711.jpg" alt="Women" class="category-img">
+            <div class="category-title">Women</div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <a href="common-section/common.html" class="text-decoration-none text-white">
+          <div class="category-card shadow">
+            <img src="card-back-img/common-section-img.webp" alt="Common" class="category-img">
+            <div class="category-title">Common</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Products Button -->
+  <div class="text-center mb-4">
+    <button id="toggleBtn" class="btn btn-info">Show Future Products</button>
+  </div>
+
+  <!-- Future Products Cards -->
+  <div id="futureCards" class="container d-none">
+    <div class="row g-4 justify-content-center">
+      <!-- Card 1 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card bg-light text-dark">
+          <img src="Nashwa_Graphic_v2.webp" class="card-img-top" alt="Nashwa Perfume">
+          <div class="card-body">
+            <h5 class="card-title">Nashwa</h5>
+            <p class="card-text">Top Notes: Saffron, Jasmine<br>Middle Notes: Amberwood, Ambergris<br>Base Notes: Fir Resin, Cedar</p>
+            <ul class="card-price">
+              <li class="original-price">2000</li>
+              <li class="price">1499</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card bg-light text-dark">
+          <img src="card-img/img-2.jpeg" class="card-img-top" alt="Blue Laddy">
+          <div class="card-body">
+            <h5 class="card-title">Blue Laddy</h5>
+            <p class="card-text">Original Blue Laddy Perfume 50ml Middle Notes: Amberwood, Ambergris<br>Base Notes: Fir Resin, Cedar</p>
+            <ul class="card-price">
+              <li class="original-price">4599</li>
+              <li class="price">3999</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="card bg-light text-dark">
+          <img src="card-img/img-1.webp" class="card-img-top" alt="Club Attraction">
+          <div class="card-body">
+            <h5 class="card-title">Club Attraction</h5>
+            <p class="card-text">For Men Perfume 100ml Aromatic Club Attraction Middle Notes: Amberwood, Ambergris<br>Base Notes: Fir Resin, Cedar</p>
+            <ul class="card-price">
+              <li class="original-price">16050</li>
+              <li class="price">14990</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer class="bg-dark text-light pt-5 pb-3 border-top border-primary">
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- About Section -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-info mb-3 text-uppercase">About Us</h5>
+        <p class="text-secondary">
+          Discover timeless fragrances crafted with passion. Our mission is to bring luxury perfumes within your reach — elegant, long-lasting, and unforgettable.
+        </p>
+        <div>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="text-light me-3 fs-5"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="text-light fs-5"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-6">
+        <h5 class="text-info mb-3 text-uppercase">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none d-block py-1"><i class="fa-solid fa-angle-right me-2 text-primary"></i>Home</a></li>
+          <li><a href="About-us/About-page.html" class="text-light text-decoration-none d-block py-1"><i class="fa-solid fa-angle-right me-2 text-primary"></i>About Us</a></li>
+          <li><a href="Contact-page/Contact.html" class="text-light text-decoration-none d-block py-1"><i class="fa-solid fa-angle-right me-2 text-primary"></i>Contact</a></li>
+          <li><a href="https://drive.google.com/file/d/1_iIR3CtnByKR77Zn2yqEJ4rsOvaXw37Y/view?usp=sharing" class="text-light text-decoration-none d-block py-1"><i class="fa-solid fa-angle-right me-2 text-primary"></i>Price List</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-lg-4 col-md-12">
+        <h5 class="text-info mb-3 text-uppercase">Contact Info</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2"><i class="fa-solid fa-location-dot text-primary me-2"></i>Azure Noir House
+            22 Rue de Lumière, Paris, France 75003</li>
+          <li class="mb-2"><i class="fa-solid fa-phone text-primary me-2"></i>03491233016</li>
+          <li><i class="fa-solid fa-envelope text-primary me-2"></i>ayanjafri159@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Divider -->
+    <hr class="border-primary opacity-25 mt-4">
+
+    <!-- Bottom Footer -->
+    <div class="text-center">
+      <p class="mb-0 small text-secondary">&copy; 2025 Perfume Store. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Carousel
+    let index = 0;
+    const cards = document.querySelectorAll(".lux-card");
+    function showSlide() {
+      cards.forEach(c => c.classList.remove("active"));
+      cards[index].classList.add("active");
+      index = (index + 1) % cards.length;
+    }
+    setInterval(showSlide, 3000);
+
+    // Toggle Future Products
+    $(document).ready(function(){
+      $("#toggleBtn").click(function(){
+        $("#futureCards").toggleClass("d-none").hide().slideToggle(900);
+        $(this).text($(this).text() === "Show Future Products" ? "Hide Future Products" : "Show Future Products");
+      });
+    });
+  </script>
+</body>
+</html>
